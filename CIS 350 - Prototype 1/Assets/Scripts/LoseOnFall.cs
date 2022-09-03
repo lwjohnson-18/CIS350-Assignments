@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 1
+* Ends Game when player falls
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

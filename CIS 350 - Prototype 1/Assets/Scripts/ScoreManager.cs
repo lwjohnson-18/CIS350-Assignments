@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 1
+* Controls the score
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

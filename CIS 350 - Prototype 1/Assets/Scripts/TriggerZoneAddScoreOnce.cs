@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 1
+* Controls when the player enters a trigger but better
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
