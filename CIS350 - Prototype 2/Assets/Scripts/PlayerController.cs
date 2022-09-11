@@ -1,7 +1,7 @@
 ﻿/*
 * Lucas Johnson
 * Prototype 2
-* Controls player movement)
+* Controls player movement
 */
 using System.Collections;
 using System.Collections.Generic;

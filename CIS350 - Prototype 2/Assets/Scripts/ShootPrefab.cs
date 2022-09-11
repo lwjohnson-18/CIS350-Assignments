@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 2
+* Shoots a designated prefab from the player
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

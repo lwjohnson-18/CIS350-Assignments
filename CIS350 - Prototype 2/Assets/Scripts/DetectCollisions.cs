@@ -1,11 +1,24 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 2
+* Controls when shot prefab collides with animal
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    private DisplayScore displayScoreScript;
+
+    private void Start()
+    {
+        displayScoreScript = GameObject.FindGameObjectWithTag("DisplayScoreText").GetComponent<DisplayScore>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
+        displayScoreScript.score++;
         Destroy(other.gameObject);
         Destroy(gameObject);
     }

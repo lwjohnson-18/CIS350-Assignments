@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 2
+* Makes an object move forward
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

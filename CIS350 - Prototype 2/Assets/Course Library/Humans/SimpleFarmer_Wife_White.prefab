@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 10
+  speed: 15
   xRange: 14
 --- !u!114 &5181450395671471174
 MonoBehaviour:
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836b5ff15dfb8224e9371eea05b21aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabToShoot: {fileID: 0}
 --- !u!1 &106968
 GameObject:
   m_ObjectHideFlags: 0
