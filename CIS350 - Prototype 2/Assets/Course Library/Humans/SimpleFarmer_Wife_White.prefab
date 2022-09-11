@@ -350,6 +350,8 @@ GameObject:
   m_Component:
   - component: {fileID: 400046}
   - component: {fileID: 9500000}
+  - component: {fileID: 240986388863441986}
+  - component: {fileID: 5181450395671471174}
   m_Layer: 0
   m_Name: SimpleFarmer_Wife_White
   m_TagString: Untagged
@@ -395,6 +397,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &240986388863441986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00421004e539d9c46b61f6f166845d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  speed: 10
+  xRange: 14
+--- !u!114 &5181450395671471174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836b5ff15dfb8224e9371eea05b21aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &106968
 GameObject:
   m_ObjectHideFlags: 0
