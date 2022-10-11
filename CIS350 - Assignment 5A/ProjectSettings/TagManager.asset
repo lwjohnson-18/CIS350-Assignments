@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Through
+  - Lose
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -41,6 +43,12 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 131982245
+    locked: 0
+  - name: Plants
+    uniqueID: 2290797021
+    locked: 0
+  - name: Platforms
+    uniqueID: 3622329775
     locked: 0
   - name: Main
     uniqueID: 1907945055

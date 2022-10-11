@@ -10,16 +10,18 @@ public class GemBehaviour : MonoBehaviour
 	public CircleCollider2D gemCollider2D;
 
 	private float durationOfCollectedParticleSystem;
-
+	private ScoreManager scoreManager;
 
 	void Start()
 	{
 		durationOfCollectedParticleSystem = collectedParticleSystem.GetComponent<ParticleSystem>().main.duration;
+		scoreManager = FindObjectOfType<ScoreManager>();
 	}
 
 	void OnTriggerEnter2D(Collider2D theCollider)
 	{
 		if (theCollider.CompareTag ("Player")) {
+			scoreManager.score++;
 			GemCollected ();
 		}
 	}

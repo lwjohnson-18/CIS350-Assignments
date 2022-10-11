@@ -1,20 +1,30 @@
-﻿using System.Collections;
+﻿/*
+* Lucas Johnson
+* Prototype 5A
+* Controls the player movement & behaviour
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerPlatformerController : PhysicsObject {
+
+    public bool gameOver = false;
+    public bool won = false;
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private ScoreManager scoreManager;
 
     // Use this for initialization
     void Awake () 
     {
         spriteRenderer = GetComponent<SpriteRenderer> (); 
         animator = GetComponent<Animator> ();
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     protected override void ComputeVelocity()
@@ -49,7 +59,21 @@ public class PlayerPlatformerController : PhysicsObject {
 
         animator.SetBool ("grounded", grounded);
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
+        animator.SetFloat("velocityY", velocity.y);
 
         targetVelocity = move * maxSpeed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Lose")
+        {
+            gameOver = true;
+        }
+        else if(collision.tag == "Win" && scoreManager.score >= 33)
+        {
+            gameOver = true;
+            won = true;
+        }
     }
 }
