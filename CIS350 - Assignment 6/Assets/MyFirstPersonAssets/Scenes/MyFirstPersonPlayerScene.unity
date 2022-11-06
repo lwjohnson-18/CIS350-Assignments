@@ -17544,6 +17544,7 @@ GameObject:
   - component: {fileID: 1162302956}
   - component: {fileID: 1162302955}
   - component: {fileID: 1162302957}
+  - component: {fileID: 1162302958}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Player
@@ -17610,6 +17611,29 @@ MonoBehaviour:
     m_Bits: 256
   isGrounded: 0
   jumpHeight: 10
+--- !u!114 &1162302958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162302954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8fe7206ec3a26478c12a238aaf6415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - id: 0
+    name: Apple
+  - id: 1
+    name: Banana
+  - id: 2
+    name: Coconut
+  - id: 3
+    name: Dog Food
+  - id: 4
+    name: Eggs
 --- !u!43 &1177163640
 Mesh:
   m_ObjectHideFlags: 0
@@ -22857,6 +22881,19 @@ MonoBehaviour:
   hitForce: 10
   cam: {fileID: 1356220423}
   muzzleFlash: {fileID: 1553253662}
+--- !u!114 &1508042492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508042489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d32a8fa3887724081a9e6128d527fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryRefrence: {fileID: 1162302958}
 --- !u!1 &1515016178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 190766, guid: 75c27bf47f501a74fa5723911612c226, type: 3}
@@ -23223,7 +23260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551932863
 Transform:
   m_ObjectHideFlags: 0
