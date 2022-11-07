@@ -1,17 +1,21 @@
-﻿using System.Collections;
+﻿/*
+ * Lucas Johnson
+ * Assignment 6
+ * Gun Superclass
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public Inventory inventoryRefrence;
-
+    [HideInInspector] public string type;
     protected int damage;
 
     protected virtual void Awake()
     {
+        type = "Gun";
         damage = 10;
-        inventoryRefrence.AddItem(6, gameObject.name);
     }
 
     public void Reload()

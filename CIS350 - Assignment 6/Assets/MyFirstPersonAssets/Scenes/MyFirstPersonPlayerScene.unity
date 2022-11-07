@@ -17545,6 +17545,7 @@ GameObject:
   - component: {fileID: 1162302955}
   - component: {fileID: 1162302957}
   - component: {fileID: 1162302958}
+  - component: {fileID: 1162302959}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Player
@@ -17634,6 +17635,19 @@ MonoBehaviour:
     name: Dog Food
   - id: 4
     name: Eggs
+--- !u!114 &1162302959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162302954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d32a8fa3887724081a9e6128d527fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 
 --- !u!43 &1177163640
 Mesh:
   m_ObjectHideFlags: 0
@@ -22881,19 +22895,6 @@ MonoBehaviour:
   hitForce: 10
   cam: {fileID: 1356220423}
   muzzleFlash: {fileID: 1553253662}
---- !u!114 &1508042492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508042489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d32a8fa3887724081a9e6128d527fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryRefrence: {fileID: 1162302958}
 --- !u!1 &1515016178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 190766, guid: 75c27bf47f501a74fa5723911612c226, type: 3}

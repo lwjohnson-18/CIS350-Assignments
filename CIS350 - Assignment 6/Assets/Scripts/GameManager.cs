@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Lucas Johnson
+ * Assignment 6
+ * Game Manager
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

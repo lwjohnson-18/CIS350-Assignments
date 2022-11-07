@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Lucas Johnson
+ * Assignment 6
+ * Parent Class
+ */
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts
